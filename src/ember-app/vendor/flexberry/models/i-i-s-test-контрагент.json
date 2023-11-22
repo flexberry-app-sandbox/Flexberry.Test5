@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISTestКонтрагент",
+  "modelName": "i-i-s-test-контрагент",
+  "className": "Контрагент",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "договор",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "контр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "организ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрагентE",
+      "modelName": "i-i-s-test-контрагент",
+      "attrs": [
+        {
+          "name": "договор",
+          "caption": "Договор",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "контр",
+          "caption": "Контраген",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимен",
+          "caption": "Наимено",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "организ",
+          "caption": "Организац",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КонтрагентL",
+      "modelName": "i-i-s-test-контрагент",
+      "attrs": [
+        {
+          "name": "договор",
+          "caption": "Договор",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "контр",
+          "caption": "Контр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимен",
+          "caption": "Наимен",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "организ",
+          "caption": "Организ",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

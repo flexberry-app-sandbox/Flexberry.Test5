@@ -1,0 +1,196 @@
+﻿{
+  "name": "IISTestЗаявка",
+  "modelName": "i-i-s-test-заявка",
+  "className": "Заявка",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "важност",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номЗаяв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состоян",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "текст",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контрагент",
+      "relatedTo": "i-i-s-test-контрагент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-test-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаявкаE",
+      "modelName": "i-i-s-test-заявка",
+      "attrs": [
+        {
+          "name": "номЗаяв",
+          "caption": "Номер заяв",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "важност",
+          "caption": "Важность",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "состоян",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "текст",
+          "caption": "Текст",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаявкаL",
+      "modelName": "i-i-s-test-заявка",
+      "attrs": [
+        {
+          "name": "номЗаяв",
+          "caption": "Номер заявки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "важност",
+          "caption": "Важность",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "состоян",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "текст",
+          "caption": "Текст",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаявкаНаРаботыE",
+      "modelName": "i-i-s-test-заявка",
+      "attrs": [
+        {
+          "name": "номЗаяв",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "текст",
+          "caption": "Текст",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "важност",
+          "caption": "Важность",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "состоян",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаявкаНаРаботыL",
+      "modelName": "i-i-s-test-заявка",
+      "attrs": [
+        {
+          "name": "номЗаяв",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состоян",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "важност",
+          "caption": "Важность",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "текст",
+          "caption": "Текст",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

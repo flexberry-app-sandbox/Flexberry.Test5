@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISTestРегистр",
+  "modelName": "i-i-s-test-регистр",
+  "className": "Регистр",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодРегист",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "период",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "регистрат",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РегистрE",
+      "modelName": "i-i-s-test-регистр",
+      "attrs": [
+        {
+          "name": "кодРегист",
+          "caption": "Код регистра",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "регистрат",
+          "caption": "Регистрат",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "наимен",
+          "caption": "Наименов",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РегистрL",
+      "modelName": "i-i-s-test-регистр",
+      "attrs": [
+        {
+          "name": "кодРегист",
+          "caption": "Код регист",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наимен",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "регистрат",
+          "caption": "Регистрат",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "период",
+          "caption": "Период",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
